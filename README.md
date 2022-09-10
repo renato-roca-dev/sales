@@ -25,7 +25,7 @@ O projeto usa a API [CheapShark](https://apidocs.cheapshark.com/), onde é poss�
 ![WEB](https://github.com/renato-roca-dev/sales/blob/master/src/imgs/WEB2.png)
 ![WEB](https://github.com/renato-roca-dev/sales/blob/master/src/imgs/WEB3.png)
 
-[Link para o projeto](https://renato-roca-dev.github.io/sales/)
+[Link para o projeto](https://sales-mauve.vercel.app/)
 
 ## Processo de criação
 
