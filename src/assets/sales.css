@@ -1,0 +1,226 @@
+*{
+    scroll-behavior: smooth;
+}
+.main-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 64px 0;
+}
+.loading-div {
+    font-size: 36px;
+    color: #FF9F29;
+    font-weight: 700;
+    text-align: center;
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    top: 0px;
+    background-color: #171717b6;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.loading-div:empty{
+    display: none;
+}
+.filter{
+    width: 100%;
+    padding: 32px;
+    background-color: #212121;
+}
+.filter h1{
+    color: #F9F9F9;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+.filter h1 span{
+    color: #FF9F29;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 14px;
+}
+.inputs{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    max-width: 550px;
+    width: 100%;
+}
+.input{
+    width: 100%;
+    min-width: 120px
+}
+.inputs label{
+    display: block;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    color: #F9F9F9;
+}
+.checks{
+    flex-wrap: wrap;
+}
+.text input{
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #212121;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 12px;
+}
+.text label{
+    margin-bottom: 8px;
+}
+.steam label{
+    color: #828282 !important;
+    cursor: not-allowed !important;
+}
+.check{
+    max-width: 120px;
+}
+.check label:hover{
+    color: #FF9F29;
+}
+.check input{
+    display: none;
+}
+.check input:checked + label{
+    color: #ff8c00;
+}
+.games, .games tbody{
+    width: 100%;
+}
+table{
+    text-align: left;
+    width: 100%;
+    border-spacing: 0;
+    padding-bottom: 115px;
+}
+.games thead{
+    display: table-header-group;
+}
+.games thead tr{
+    display: table-row;
+    background-color: #212121;
+}
+.games thead tr td{
+    color: #F9F9F9;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    padding: 12px 0;
+}
+.games tbody tr{
+    background-color: #333333;
+}
+.games tbody tr td{
+    text-align: center;
+    color: #F9F9F9;
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: 2px solid #212121;
+    padding: 6px 0;
+    min-height: 50px;
+}
+.games tbody tr td sup del{
+    color: #828282;
+}
+.title-img{
+    text-align: left !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.title-img:hover, .title-img a:hover, .cursor:hover{
+    text-decoration: underline;
+    cursor: pointer;;
+}
+.game-image{
+    max-width: 130px;
+    min-width: 120px;
+    object-fit: cover;
+    height: 45px;
+    display: block;
+}
+.savings, .store, .pricetd, .review, .rating{
+    min-width: 150px;
+    width: 150px;
+    max-width: 150px;
+}
+.btn-pages{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.btn-pages span{
+    color: #F9F9F9;
+    font-size: 20px;
+    font-weight: 500;
+}
+@media screen and (max-width: 1024px){
+    .game-image, .rating{
+        display: none;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+    }
+}
+@media screen and (max-width: 768px){
+    .savings, .rating{
+        display: none;
+    }
+    .wrapper{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 618px){
+    .review{
+        display: none;
+    }
+    .titles{
+        flex-direction: column;
+        align-items: center;
+    }
+    .titles .button{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 425px){
+    .games tbody tr td{
+        font-size: 16px;
+    }
+    .store, .pricetd{
+        min-width: 110px;
+        width: 150px;
+        max-width: 110px;
+    }
+}
+@media screen and (max-width: 370px){
+    .games tbody tr td{
+        font-size: 15px;
+    }
+    .store, .pricetd{
+        min-width: 100px;
+        width: 150px;
+        max-width: 100px;
+    }
+}

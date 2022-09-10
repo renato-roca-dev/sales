@@ -1,0 +1,31 @@
+.main-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+}
+.main-texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 90px 0;
+    min-height: 60vh;
+}
+.main-texts h1{
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: 700;
+}
+.main-texts h2{
+    color: #828282;
+    font-weight: 500;
+    font-size: 24px;
+    min-height: 60px;
+}
+.main-texts h2 span{
+    color: #FF9F29;
+}
